@@ -5,7 +5,7 @@ const router = require('../router/router')
 const adminRouter = require('../router/AdminRoute')
 const ConnectDb = require('../utils/db')
 const corsOption={
-    origin: ['https://mern-todu-list.vercel.app'], // Both URLs allowed
+    origin: 'https://todu-front.vercel.app', 
     methods: 'GET,POST,DELETE,PATCH,PUT,HEAD',
     credentials:true
 }
