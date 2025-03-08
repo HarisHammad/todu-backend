@@ -1,9 +1,9 @@
 require('dotenv').config()
 const cors = require('cors')
 const express = require('express');
-const router = require('../router/router')
-const adminRouter = require('../router/AdminRoute')
-const ConnectDb = require('../utils/db')
+const router = require('./router/router')
+const adminRouter = require('./router/AdminRoute')
+const ConnectDb = require('./utils/db')
 const corsOption={
     origin: 'https://todu-front.vercel.app', 
     methods: 'GET,POST,DELETE,PATCH,PUT,HEAD',
@@ -14,9 +14,7 @@ app.use(cors(corsOption))
 app.use(express.json())
 app.use('/api',router)
 app.use('/api',adminRouter)
-app.use("/", (req, res) => {
-    res.status(200).json({ message: "API is working!" });
-});
+
 
 
 
