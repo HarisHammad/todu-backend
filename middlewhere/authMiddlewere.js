@@ -9,7 +9,7 @@ try {
       return  res.status(200).json({message:'Token not provided'})
     }
     const jwttoken = token.replace("Bearer",'').trim();
-    const isVarifaid = jwt.verify(jwttoken,"To_Do_List");
+    const isVarifaid = jwt.verify(jwttoken,process.env.JWT_SECRET_TOKEN);
     const userData = await User.findOne({email:isVarifaid.email}).select('-password');
      req.user = userData
      next()
