@@ -1,5 +1,5 @@
 
-const taskModle = require('../model/Task-model')
+const taskModle = require('../model/task-model')
 const User = require('../model/user-model')
 const bcrypt = require('bcrypt')
 const register =async(req,res)=>{
