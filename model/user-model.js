@@ -55,7 +55,7 @@ userSchema.methods.genreteToken = async function (){
             email:this.email,
             isAdmin:this.isAdmin
         },
-    process.env.JWT_SECRET_TOKEN,
+  "To_Do_List",
     {
         expiresIn:'30d'
     }
