@@ -1,4 +1,4 @@
-const bcrypt =require('bcrypt')
+const bcrypt =require('bcrypt.js')
 const jwt =require('jsonwebtoken')
 const {Schema,model} = require('mongoose');
 const mongoose = require('mongoose');
