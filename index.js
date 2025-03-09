@@ -1,9 +1,9 @@
 require('dotenv').config()
 const cors = require('cors')
 const express = require('express');
-const router = require('./server/router/router')
-const adminRouter = require('./server/router/AdminRoute')
-const ConnectDb = require('./server/utils/db')
+const router = require('./router/router')
+const adminRouter = require('./router/AdminRoute')
+const ConnectDb = require('./utils/db')
 const corsOption={
     origin: 'https://todu-front.vercel.app', 
     methods: 'GET,POST,DELETE,PATCH,PUT,HEAD',
